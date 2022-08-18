@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "styled-components";
 
-export default function Navbar() {
+export default function styling() {
   const Header = styles.header`
     height: 90px;
     color: white;
@@ -19,8 +19,8 @@ export default function Navbar() {
       position: relative;
       left: 30px;
       top: 30px;
-      width: 700px;
-      height: 500px;
+      width: 750px;
+      height: 1000px;
     }
   `;
   const FORM = styles.div`
@@ -32,11 +32,31 @@ export default function Navbar() {
     top: 200px;
     background-color: white;
     `;
-  const Button = styles.button`
+  const INPUT = styles.input`
+    width: 97%
+  `;
+  const Button1 = styles.button`
       color: white;
-      background-color:grey;
-      border:2px solid blue;
-      width: 180px;
+      background-color:pink;
+      border:2px solid pink;
+      border-radius: 4px;
+      width: 100%;
+    }
+  `;
+  const Button2 = styles.button`
+      color: grey;
+      background-color:#FFE4C4;
+      border:2px solid grey;
+      border-radius: 4px;
+      width: 100%;
+    }
+  `;
+  const Button3 = styles.button`
+      color: grey;
+      background-color:#FAEBD7;
+      border:2px solid grey;
+      border-radius: 4px;
+      width: 100%;
     }
   `;
   const Footer = styles.footer`
@@ -68,34 +88,39 @@ export default function Navbar() {
           <b>Email address</b>
         </label>
         <br></br>
-        <input
+        <INPUT
           type="text"
           id="firstName"
           placeholder="yourname@yourmail.com"
-        ></input>
+        ></INPUT>
+        <br></br>
         <br></br>
         <label>
-          <b>Password Forgot password?</b>
+          <b>Password</b>
+          <a href="">Forgot password?</a>
         </label>
         <br></br>
-        <input
+        <INPUT
           type="text"
           id="lastName"
           placeholder="Enter your password"
-        ></input>{" "}
+        ></INPUT>{" "}
         <br></br>
-        <Button>Sign In</Button>
         <br></br>
-        OR<br></br>
-        <Button>Sign In with Facebook</Button>
+        <Button1>Sign In</Button1>
         <br></br>
-        <Button>Sign In with Twitter</Button>
+        <br></br>
+        <center>OR</center>
+        <br></br>
+        <Button2>Sign In with Facebook</Button2>
+        <br></br>
+        <Button3>Sign In with Twitter</Button3>
+        <br></br>
         <br></br>
         Don't have an account? <a href="">Create an Account</a>
       </FORM>
       <Footer>
         <h3>Made by Aaisha</h3>
-        <h3>Licences Change Get Help</h3>
       </Footer>
     </div>
   );

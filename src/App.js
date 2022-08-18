@@ -1,9 +1,9 @@
-import NavBar from "./components/NavBar.js";
+import Styling from "./components/Styling";
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <Styling />
     </div>
   );
 }
