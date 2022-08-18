@@ -19,10 +19,8 @@ export default function styling() {
   const Content = styles.div`
     img{
       position: relative;
-      left: 30px;
-      top: 30px;
       width: 750px;
-      height: 1000px;
+      height: 900px;
     }
   `;
   const FORM = styles.div`
@@ -63,7 +61,7 @@ export default function styling() {
     }
   `;
   const Footer = styles.footer`
-    height: 70px;
+    height: 90px;
     color: white;
     position:relative;
     background-color: pink;
@@ -74,7 +72,10 @@ export default function styling() {
       <Header>
         <img src="https://etimg.etb2bimg.com/photo/93130023.cms" alt="Sedin" />
         <center>
-          <h3>Dashboard Apps Pages Components Collections</h3>
+          <h3>
+            Dashboard &nbsp; Apps &nbsp; Pages &nbsp; Components &nbsp;
+            Collections
+          </h3>
         </center>
       </Header>
       <Content>
@@ -100,7 +101,7 @@ export default function styling() {
         <br></br>
         <br></br>
         <label>
-          <b>Password</b>
+          <b>Password</b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
           <a href="">Forgot password?</a>
         </label>
         <br></br>
@@ -129,6 +130,7 @@ export default function styling() {
         </center>
       </FORM>
       <Footer>
+        <br></br>
         <h3>Made by @Aaisha</h3>
       </Footer>
     </div>
