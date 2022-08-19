@@ -1,7 +1,21 @@
 import React from "react";
 import styles from "styled-components";
+import { Devices } from "./Device";
 
 export default function styling() {
+  const DIV = styles.div`
+  @media ${Devices.mobile} {
+    max-width: 480px;
+  }
+
+  @media ${Devices.tablet} {
+    max-width: 800px;
+  }
+  @media ${Devices.laptop} {
+    max-width: 1400px;
+  }
+  }
+  `;
   const Header = styles.header`
     height: 60px;
     color: white;
@@ -68,7 +82,7 @@ export default function styling() {
     font-family: Times New Roman;
   `;
   return (
-    <div>
+    <DIV>
       <Header>
         <img src="https://etimg.etb2bimg.com/photo/93130023.cms" alt="Sedin" />
         <center>
@@ -133,6 +147,6 @@ export default function styling() {
         <br></br>
         <h3>Made by @Aaisha</h3>
       </Footer>
-    </div>
+    </DIV>
   );
 }
