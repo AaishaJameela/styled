@@ -1,9 +1,10 @@
-import Styling from "./components/Styling";
+import React from "react";
+import Home from "./components/Home";
 
 function App() {
   return (
     <div className="App">
-      <Styling />
+      <Home />
     </div>
   );
 }
